@@ -1,0 +1,78 @@
+body{
+    background-color: lightyellow;
+}
+
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#home #home-content h1{
+    margin-bottom: 15px;
+    animation: fadeInAnimation ease 2s;
+    font-weight: bold;
+}
+
+#home #home-content h4{
+    display: inline;
+    animation: fadeInAnimation ease 2.5s;
+}
+
+#contact-div{
+    padding: 30px;
+    animation: fadeInAnimation ease 3s;
+}
+
+#contact-div a{
+    padding: 15px;
+}
+
+#contact-div a:hover{
+    text-decoration: none;
+}
+
+#contact-div a img:last-child{
+    display: none;
+}
+
+#contact-div a:hover img:last-child{
+    display: inline-block;
+}
+
+#contact-div a:hover img:first-child{
+    display: none;
+}
+
+#sections{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    animation: fadeInAnimation ease 3.5s;
+}
+#sections li{
+    display: inline-block;
+    padding: 25px;
+    font-size: 20px;
+}
+
+#sections li a{
+    color: black;
+}
+
+#sections li a:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.5s;
+    text-decoration: none;
+}
