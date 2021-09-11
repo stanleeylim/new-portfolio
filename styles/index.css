@@ -4,7 +4,7 @@ body{
 }
 
 .container .display-1{
-    font-family: fantasy;
+    font-family: fantasy, sans-serif;
 }
 
 #sections ul > li a{
