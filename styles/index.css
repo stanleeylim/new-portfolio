@@ -1,45 +1,21 @@
 body{
-    background-color: lightyellow;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
+    background: #282822;
+    color: #ffffff ;
 }
 
-@keyframes fadeInAnimation{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.container .display-1{
+    font-family: fantasy;
 }
 
-#home{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+#sections ul > li a{
+    font-size: 18px;
+    text-decoration: none;
 }
 
-#home #home-content h1{
-    margin-bottom: 15px;
-    animation: fadeInAnimation ease 2s;
-    font-weight: bold;
+#sections ul > li a:hover{
+    font-weight: 600;
 }
 
-#home #home-content h4{
-    display: inline;
-    animation: fadeInAnimation ease 2.5s;
-}
-
-#contact-div{
-    padding: 30px;
-    animation: fadeInAnimation ease 3s;
-}
 
 #contact-div a{
     padding: 15px;
@@ -60,39 +36,4 @@ body{
 
 #contact-div a:hover img:first-child{
     display: none;
-}
-
-#sections{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    animation: fadeInAnimation ease 3.5s;
-}
-#sections li{
-    display: inline-block;
-    padding: 25px;
-    font-size: 20px;
-}
-
-#sections li a{
-    color: black;
-    text-decoration: none;
-}
-
-#sections li a:hover{
-    cursor: pointer;
-    color: red;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 500px){
-    #sections li{
-        display: block;
-        padding: 10px;
-    }
-
-    #home #home-content h4{
-        font-size: 17px;
-    }
 }
