@@ -1,0 +1,65 @@
+*{
+    font-family: fantasy, sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background: #282822;
+}
+
+.container h1{
+    color: #ffffff;
+}
+
+.container .display-2{
+    color: rgb(210, 105, 30);
+    animation: fadeIn 2s;
+}
+
+.container .display-2 span:hover{
+    color:#ffffff;
+}
+
+/* .container .container-fluid > div{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+} */
+
+#sections ul > li a{
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+/* For the devices like phones, up to 480px */
+
+@media screen and (max-width: 767px) {
+    .container .display-2{
+        font-size: 25px;
+    }
+}
+
+/* For the devices like tablets, 768px and up */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* For devices like tablets/desktops and up ----------- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*For devices like large desktops and up ----------- */
+
+@media screen and (min-width: 1200px) {
+
+}
