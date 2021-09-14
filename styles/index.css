@@ -1,11 +1,12 @@
 body{
     background: #282822;
     color: #ffffff ;
-}
-
-.container .display-1{
     font-family: 'Bungee', cursive;
 }
+
+/* .container .display-1{
+    font-family: 'Bungee', cursive;
+} */
 
 #sections ul > li a{
     font-size: 18px;
@@ -36,4 +37,20 @@ body{
 
 #contact-div a:hover img:first-child{
     display: none;
+}
+
+@media (max-width: 575px) {
+    #sections ul li{
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #contact-div a > img{
+        width: 25px;
+        height: 25px;
+    }
+
+    #contact-div a{
+        padding: 15px 5px 15px 5px;
+    }
 }
