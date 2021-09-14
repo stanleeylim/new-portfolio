@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/skills.css">
+    <link href='https://fonts.googleapis.com/css?family=Bungee:400' rel='stylesheet' type='text/css'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
@@ -14,11 +15,11 @@
 </head>
 
 <body class="p-5">
-    <div class="container min-vh-100 position-relative">
+    <div class="container min-vh-100">
         <!-- Skills content -->
         <h1 class="display-3">Skills</h1>
-        <div class="text-center mt-5 d-flex flex-column justify-content-center">
-            <p class="display-2 lh-base">
+        <div class="mt-5">
+            <p class="display-4 lh-base">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
@@ -33,28 +34,36 @@
                 <span>Microsoft Azure</span>
             </p>
         </div>
-        
 
-        <!-- navigation -->
-        <div id="sections" class="fixed-bottom text-center">
-            <ul class="list-inline p-0">
-                <li class="list-inline-item">
-                    <a href="index.html" class="link-light">Home</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="about.html" class="link-light">About</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="experiences.html" class="link-light">Experiences</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="skills.html" class="link-light">Skills</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="contact.html" class="link-light">Portfolio</a>
-                </li>
-            </ul>
+        <div class="pos-f-t fixed-bottom">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-light">
+                  <ul class="navbar-nav">
+                    <li class="nav-item p-2">
+                        <a href="index.html" class="navbar-brand m-0">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="about.html" class="navbar-brand m-0">About</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="experiences.html" class="navbar-brand m-0">Experiences</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="skills.html" class="navbar-brand m-0">Skills</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="contact.html" class="navbar-brand m-0">Portfolio</a>
+                    </li>
+                  </ul>                
+              </div>
+            </div>
+            <nav class="navbar navbar-light bg-light p-1">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
         </div>
+
     </div>
 </body>
 
