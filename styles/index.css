@@ -1,15 +1,17 @@
-body{
-    background: #282822;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     color: #ffffff ;
     font-family: 'Bungee', cursive;
 }
 
-/* .container .display-1{
-    font-family: 'Bungee', cursive;
-} */
+body{
+    background: #282822;
+}
 
 #sections ul > li a{
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: none;
 }
 
@@ -19,7 +21,7 @@ body{
 
 
 #contact-div a{
-    padding: 15px;
+    padding: 0.9375rem;
     text-decoration: none;
 }
 
@@ -42,15 +44,15 @@ body{
 @media (max-width: 575px) {
     #sections ul li{
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
     }
 
     #contact-div a > img{
-        width: 25px;
-        height: 25px;
+        width: 1.5625rem;
+        height: 1.5625rem;
     }
 
     #contact-div a{
-        padding: 15px 5px 15px 5px;
+        padding: 0.9375rem 0.3125rem 0.9375rem 0.3125rem;
     }
 }

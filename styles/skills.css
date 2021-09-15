@@ -1,4 +1,7 @@
 *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Bungee', cursive;
     font-weight: bold;
 }
@@ -11,9 +14,19 @@ body{
     color: #ffffff;
 }
 
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 100%;}
+}
+
 .container .display-4{
     color: rgb(210, 105, 30);
     animation: fadeIn 2s;
+}
+
+.container .display-4 span{
+    margin-right: 1.25em;
+    font-size: 1.15em;
 }
 
 .container .display-4 span:hover{
