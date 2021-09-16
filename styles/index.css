@@ -1,3 +1,5 @@
+@import url(background.css);
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,17 +8,16 @@
     font-family: 'Bungee', cursive;
 }
 
-body{
-    background: #282822;
-}
-
 #sections ul > li a{
     font-size: 1.125rem;
     text-decoration: none;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid transparent;
 }
 
 #sections ul > li a:hover{
-    font-weight: 600;
+    border: 1px solid #ffffff;
 }
 
 
@@ -41,10 +42,11 @@ body{
     display: none;
 }
 
-@media (max-width: 575px) {
+/* Responsive */
+@media screen and (max-width: 767px) {
     #sections ul li{
         display: block;
-        margin-bottom: 0.3125rem;
+        margin-bottom: 1rem;
     }
 
     #contact-div a > img{
