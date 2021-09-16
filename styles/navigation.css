@@ -1,0 +1,10 @@
+/* Footer */
+.pos-f-t ul li{
+    border-bottom: 0.5px solid #DAD8E0;
+    letter-spacing: 5px;
+}
+
+.pos-f-t li:last-child, .navbar button{
+    border: 0;
+}
+

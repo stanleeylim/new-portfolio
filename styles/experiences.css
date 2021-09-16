@@ -1,0 +1,45 @@
+/* Footer */
+@import url(navigation.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #282822;
+}
+
+.container h1, h2{
+    color: #ffffff;
+}
+
+.container h1, h2, .pos-f-t{
+    font-family: 'Bungee', cursive;
+}
+
+.experience-section .d-flex .card {
+    width: 50%;
+}
+
+.experience-section .d-flex .card:nth-child(even){
+    align-self: flex-end;
+}
+
+
+.experience-section .d-flex .card .card-text{
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    .experience-section .d-flex .card {
+        width: 100%;
+    }
+
+    .experience-section .d-flex .card:nth-child(even){
+        align-self: auto;
+    }
+}
