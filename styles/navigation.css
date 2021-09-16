@@ -1,4 +1,8 @@
 /* Footer */
+.pos-f-t{
+    width: 100%;
+}
+
 .pos-f-t ul li{
     border-bottom: 0.5px solid #DAD8E0;
     letter-spacing: 5px;
