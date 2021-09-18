@@ -1,18 +1,29 @@
 @import url(background.css);
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: #ffffff ;
-    font-family: 'Bungee', cursive;
+}
+
+.container .display-1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 4rem;   
+}
+
+.container h5{
+    font-size: 1rem;
 }
 
 #sections ul > li a{
     font-size: 1.125rem;
     text-decoration: none;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    /* padding-right: 0.5rem;
+    padding-left: 0.5rem; */
+    padding: 10px;
     border: 1px solid transparent;
 }
 
@@ -56,5 +67,15 @@
 
     #contact-div a{
         padding: 0.9375rem 0.3125rem 0.9375rem 0.3125rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container .display-1{
+        font-size: 8rem;
+    }
+
+    .container h5{
+        font-size: 1.5rem;
     }
 }
