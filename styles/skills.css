@@ -9,29 +9,25 @@
     font-weight: bold;
 }
 
-/* body{
-    background: #282822;
-} */
-
 .container h1{
     color: #ffffff;
 }
 
-@keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 100%;}
+.container .d-flex{
+    justify-content: space-between;
 }
 
-.container .display-4{
-    color: rgb(210, 105, 30);
-    animation: fadeIn 2s;
+.container .d-flex .card{
+    margin-bottom: 2em;
 }
 
-.container .display-4 span{
-    margin-right: 1.25em;
-    font-size: 1.15em;
-}
-
-.container .display-4 span:hover{
-    color:#ffffff;
+/* Responsive */
+@media screen and (max-width: 767px) {
+    .container .d-flex{
+        justify-content: center;
+    }
+    
+    .container .d-flex .card:last-child{
+        margin-bottom: 0;
+    }
 }
