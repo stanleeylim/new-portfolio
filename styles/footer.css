@@ -1,0 +1,24 @@
+.footer .container-fluid span{
+    font-size: 1rem;
+}  
+
+/* #contact-div a{
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+#contact-div a:hover{
+    text-decoration: none;
+}
+
+#contact-div a img:last-child{
+    display: none;
+}
+
+#contact-div a:hover img:last-child{
+    display: inline-block;
+}
+
+#contact-div a:hover img:first-child{
+    display: none;
+} */
