@@ -12,12 +12,9 @@
     color: #ffffff;
 }
 
-/* .container h1, h2, .pos-f-t{
-    font-family: 'Bungee', cursive;
-} */
-
 .experience-section .d-flex .card {
-    width: 50%;
+    width: 45%;
+    z-index: 1;
 }
 
 .experience-section .d-flex .card:nth-child(even){
@@ -30,6 +27,42 @@
     margin-top: 1rem;
 }
 
+.experience-section .d-flex{
+    position: relative;
+}
+
+.experience-section .d-flex::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.experience-section .d-flex .card::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #939597;
+    border: 5px solid #F5DF4D;
+    border-radius: 50%;
+}
+
+.experience-section .d-flex .card:nth-child(odd)::after{
+    left: 110%;
+    margin-left: -5px;
+    background-color: #939597;
+}
+
+.experience-section .d-flex .card:nth-child(even)::after{
+    right: 110%;
+    margin-right: -5px;
+}
+
 /* Responsive */
 @media screen and (max-width: 767px) {
     .experience-section .d-flex .card {
@@ -38,5 +71,27 @@
 
     .experience-section .d-flex .card:nth-child(even){
         align-self: auto;
+    }
+
+    /* .experience-section .d-flex::after, 
+    .experience-section .d-flex .card::after{
+        display: none;
+    } */
+
+    .experience-section .d-flex .card:nth-child(odd)::after{
+        left: 50%;
+        top: 105%;
+        margin-left: -12px;
+        background-color: #939597;
+    }
+    
+    .experience-section .d-flex .card:nth-child(even)::after{
+        top: 105%;
+        right: 50%;
+        margin-right: -12px;
+    }
+
+    .experience-section .d-flex .card:last-child::after{
+        display: none;
     }
 }
