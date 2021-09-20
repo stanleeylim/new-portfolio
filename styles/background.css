@@ -1,6 +1,8 @@
 body{
     /* background: linear-gradient(to right, #282822, #3d3d38, #52524e, #686864, #7e7e7a); */
-	background: #282822;                                                          
+	/* background: #282822;                                                           */
+	background: url(../assets/background.png) no-repeat;
+	background-size: cover;
 }
 
 @keyframes gradient {
